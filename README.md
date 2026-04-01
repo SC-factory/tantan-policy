@@ -1,1 +1,306 @@
-# tantan-policy
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タンタンボタン — プライバシーポリシー・利用規約</title>
+  <style>
+    :root {
+      --bg: #fffbeb;
+      --bg-card: rgba(255, 255, 255, 0.72);
+      --text: #2d2a24;
+      --text-muted: rgba(45, 42, 36, 0.62);
+      --rule: rgba(212, 185, 90, 0.35);
+      --accent: #6b5420;
+      --accent-link: #8a6d2e;
+      --accent-warm: #ffeb64;
+      --accent-warm-deep: #f5df55;
+      --dot: rgba(107, 84, 32, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+      font-size: 15px;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(255, 235, 100, 0.55), transparent 55%),
+        radial-gradient(ellipse 90% 60% at 100% 100%, rgba(255, 235, 100, 0.22), transparent 50%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4.5rem 1.75rem 6rem;
+    }
+
+    @media (min-width: 640px) {
+      .wrap {
+        padding: 6rem 2.5rem 8rem;
+      }
+    }
+
+    header {
+      margin-bottom: 4.5rem;
+      padding: 2rem 1.5rem 3rem;
+      border-radius: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--bg-card);
+      box-shadow: 0 8px 28px rgba(139, 119, 50, 0.08);
+      border-bottom: 3px solid var(--accent-warm);
+    }
+
+    @media (min-width: 640px) {
+      header {
+        padding: 2.25rem 2rem 3rem;
+      }
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: linear-gradient(180deg, var(--accent-warm), var(--accent-warm-deep));
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 1.95rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.45;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .lede {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 34em;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      padding: 1.75rem 1.25rem;
+      border-radius: 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--rule);
+      box-shadow: 0 4px 18px rgba(139, 119, 50, 0.06);
+    }
+
+    @media (min-width: 640px) {
+      section {
+        padding: 2rem 1.75rem;
+      }
+    }
+
+    section:last-of-type {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.75rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 2px solid var(--accent-warm);
+      color: var(--accent);
+    }
+
+    h3 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.85rem;
+      color: var(--accent);
+    }
+
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
+    p, li {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent-link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.15em;
+    }
+
+    ul li::before {
+      content: "・";
+      position: absolute;
+      left: 0;
+      color: var(--dot);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 3rem;
+      padding: 1.25rem 1rem;
+      border-radius: 0.5rem;
+      background: rgba(255, 235, 100, 0.28);
+      border: 1px solid var(--rule);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-link {
+      display: inline-block;
+      font-size: 0.95rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      border-bottom: 2px solid var(--accent-warm);
+      padding-bottom: 0.15em;
+      transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .contact-link:hover,
+    .contact-link:focus-visible {
+      border-bottom-color: var(--accent);
+      color: var(--text);
+      outline: none;
+      background-color: rgba(255, 235, 100, 0.35);
+      border-radius: 0.25em;
+      padding: 0.15em 0.35em;
+      margin: -0.15em -0.35em;
+    }
+
+    .app-name {
+      font-weight: 600;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="badge">Legal</p>
+      <h1><span class="app-name">タンタンボタン 〜おしてあそぼう〜</span><br>プライバシーポリシー・利用規約</h1>
+      <p class="lede">
+        本ページは、iOS アプリケーション「タンタンボタン 〜おしてあそぼう〜」（以下「本アプリ」）の利用に関する方針と条件をまとめたものです。
+      </p>
+    </header>
+
+    <section id="privacy" aria-labelledby="privacy-heading">
+      <h2 id="privacy-heading">プライバシーポリシー</h2>
+
+      <h3>1. 収集する情報について</h3>
+      <p>本アプリの運営者は、本アプリを通じて<strong>お名前・住所・メールアドレス・電話番号など、お本人を特定しうる個人情報を収集・保存しません</strong>。アカウント登録やプロフィール入力の機能を設けない限り、当該方針に従います。</p>
+
+      <h3>2. 広告（Google AdMob）について</h3>
+      <p>本アプリでは、Google LLC が提供する広告配信サービス <strong>Google AdMob</strong> を利用して広告を表示する場合があります。</p>
+      <p>AdMob は、広告の配信・効果測定のため、広告 ID や端末・利用状況に関する情報を取得することがあります。これらの取り扱いは、Google のプライバシーポリシーおよび広告に関するポリシーに基づきます。詳細は <a href="https://policies.google.com/privacy?hl=ja" rel="noopener noreferrer" target="_blank">Google のプライバシーポリシー</a> をご確認ください。</p>
+      <p>端末の設定により、パーソナライズド広告の制限や広告識別子のリセットができる場合があります。設定方法は、ご利用の OS の案内に従ってください。</p>
+
+      <h3>3. 第三者サービス</h3>
+      <p>本アプリが連携する広告・分析等の第三者サービスが、独自のプライバシーポリシーに従い情報を扱う場合があります。当該サービスの提供元が公表する内容を参照してください。</p>
+
+      <h3>4. お問い合わせ</h3>
+      <p>本ポリシーに関するご質問は、ページ末尾のお問い合わせフォームよりご連絡ください。</p>
+
+      <h3>5. 変更</h3>
+      <p>法令の改正やサービス内容の変更に応じ、本ポリシーを更新することがあります。重要な変更がある場合は、アプリ内または本ページ等でお知らせするよう努めます。</p>
+    </section>
+
+    <section id="terms" aria-labelledby="terms-heading">
+      <h2 id="terms-heading">利用規約</h2>
+
+      <h3>第1条（適用）</h3>
+      <p>本規約は、本アプリの利用に関する条件を、本アプリを利用するすべての方（以下「ユーザー」）と本アプリの運営者との間で定めるものです。ユーザーは、本アプリを利用した時点で、本規約に同意したものとみなします。</p>
+
+      <h3>第2条（Apple 標準利用規約との関係）</h3>
+      <p>本アプリは Apple の App Store を通じて配信されます。<strong>本利用規約に加え、Apple Inc.（アップル社）が定める標準利用規約（Apple メディアサービス利用規約等、App Store に関連する利用条件を含みます）にも準拠し、これらと矛盾する場合は、当該 Apple の規約が優先されることがあります。</strong>ユーザーは、App Store の利用にあたって Apple の規約を遵守するものとします。</p>
+
+      <h3>第3条（利用環境）</h3>
+      <p>本アプリの利用に必要な通信料金、端末、OS のバージョン等は、ユーザーの負担と責任において準備してください。</p>
+
+      <h3>第4条（禁止事項）</h3>
+      <p>ユーザーは、以下の行為をしてはなりません。</p>
+      <ul>
+        <li>法令または公序良俗に違反する行為</li>
+        <li>本アプリの運営、ネットワーク、サーバ等に過度な負荷を与える行為、不正アクセス、改ざん、逆コンパイル等の行為</li>
+        <li>その他、運営者が不適切と判断する行為</li>
+      </ul>
+
+      <h3>第5条（知的財産権）</h3>
+      <p>本アプリに関する著作権、商標権その他の知的財産権は、運営者または正当な権利者に帰属します。本規約に基づく利用許諾は、知的財産権の譲渡を意味しません。</p>
+
+      <h3>第6条（免責事項）</h3>
+      <p><strong>本アプリは、現状有姿で提供されます。運営者は、本アプリの正確性、完全性、有用性、特定目的への適合性、バグや不具合がないことについて、いかなる保証も行いません。</strong></p>
+      <p><strong>本アプリの利用または利用不能により生じた損害（間接損害、逸失利益、データの消失等を含みますがこれらに限りません）について、運営者に故意または重過失がある場合を除き、運営者は責任を負いません。</strong> なお、消費者契約法その他の強行法規により責任の全部または一部を免除できない場合は、当該法令に従います。</p>
+
+      <h3>第7条（サービス内容の変更・終了）</h3>
+      <p>運営者は、事前の通知なく、本アプリの内容を変更、または提供を終了することがあります。</p>
+
+      <h3>第8条（規約の変更）</h3>
+      <p>運営者は、必要に応じて本規約を変更できます。変更後の規約は、本ページに掲載したときから効力を生じるものとします。重要な変更については、アプリ内表示等で周知するよう努めます。</p>
+
+      <h3>第9条（準拠法・管轄）</h3>
+      <p>本規約は日本法を準拠法とします。本アプリに関する紛争については、運営者の所在地を管轄する裁判所を第一審の専属的合意管轄とします（消費者としての強行法規による制限がある場合は、当該制限に従います）。</p>
+    </section>
+
+    <p class="meta">制定日：2026年4月1日</p>
+
+    <footer>
+      <p>お問い合わせはこちら</p>
+      <a class="contact-link" href="https://docs.google.com/forms/d/e/DUMMY_FORM_ID/viewform" rel="noopener noreferrer" target="_blank">Google フォームで連絡する</a>
+    </footer>
+  </div>
+</body>
+</html>
